@@ -1,0 +1,22 @@
+{
+  "name": "whereis",
+  "version": "1.0.0",
+  "description": "Slack command using Cisco Prime API to find people",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LewisLebentz/WhereIs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LewisLebentz/WhereIs/issues"
+  },
+  "homepage": "https://github.com/LewisLebentz/WhereIs#readme",
+  "dependencies": {
+    "serverless-python-requirements": "^4.1.1"
+  }
+}
