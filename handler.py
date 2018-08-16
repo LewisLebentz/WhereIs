@@ -2,6 +2,7 @@ import json
 import requests
 import sys
 import time
+from urllib.parse import unquote
 
 def whereis(event, context):
     requests.packages.urllib3.disable_warnings()
@@ -43,4 +44,25 @@ def whereis(event, context):
 
     print(updateTime)
 
-    return(data['queryResponse']['entity'][0]['clientsDTO']['location'] + " last seen at " + updateTime)
+    initialresponse = {
+        "statusCode": 200,
+        "body": data['queryResponse']['entity'][0]['clientsDTO']['location'] + " last seen at " + updateTime,
+    }
+
+    # print(slackstringdict['response_url'])
+    # print(unquote(slackstringdict['response_url']))
+    #
+    # slack_data = {
+    # 'text': data['queryResponse']['entity'][0]['clientsDTO']['location'] + " last seen at " + updateTime,
+    # 'response_type': "in_channel",
+    # }
+    #
+    # headers = {'Content-Type': 'application/json'}
+    #
+    #
+    # sdata = json.dumps(slack_data)
+    # r = requests.post(unquote(slackstringdict['response_url']), sdata, headers=headers)
+    #
+    # print(r.status_code)
+
+    return(initialresponse)
