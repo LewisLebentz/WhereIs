@@ -1,5 +1,6 @@
 language: python
-install: "npm install --save"
+install: "npm install serverless -g"
 script:
+  - npm install --save
   - sls requirements install
   - sls package
