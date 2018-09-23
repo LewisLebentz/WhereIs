@@ -1,0 +1,5 @@
+language: python
+install: "npm install --save"
+script:
+  - sls requirements install
+  - sls package
