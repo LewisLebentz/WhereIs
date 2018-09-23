@@ -11,7 +11,7 @@
 
 **Slack slash command using Cisco Prime API to find people.**
 
-Built with the [Serverless Framework](serverless.com), using AWS Lambda and API Gateway.
+Built with the [Serverless Framework](https://serverless.com), using AWS Lambda and API Gateway.
 
 
 Setup
