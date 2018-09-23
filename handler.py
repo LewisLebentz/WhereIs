@@ -14,9 +14,9 @@ def whereis(event, context):
 
     slackstringdict = dict(item.split("=") for item in slackstring.split("&"))
 
-    url = 'https://***REMOVED***/webacs/api/v3/data/Clients.json?userName="%s***REMOVED***"' % slackstringdict['text']
+    url = 'https://ciscoprime/webacs/api/v3/data/Clients.json?userName="%s"' % slackstringdict['text']
 
-    resp = requests.get(url=url, verify=False, auth=('***REMOVED***','***REMOVED***'))
+    resp = requests.get(url=url, verify=False, auth=('apiuser','password'))
     data = resp.json()
 
     # print(data)
@@ -30,7 +30,7 @@ def whereis(event, context):
     # print(data['queryResponse']['entityId'][0]['@url'])
 
     url = str(data['queryResponse']['entityId'][0]['@url']) + '.json'
-    resp = requests.get(url=url, verify=False, auth=('***REMOVED***','***REMOVED***'))
+    resp = requests.get(url=url, verify=False, auth=('apiuser','password'))
     data = resp.json()
 
     # print(data['queryResponse'])

@@ -1,4 +1,4 @@
-service: whereis # NOTE: update this with your service name
+service: whereis
 
 provider:
   name: aws
@@ -14,10 +14,10 @@ functions:
           path: /prod
     vpc:
       securityGroupIds:
-        - sg-***REMOVED***
+        - sg-0aa000aa
       subnetIds:
-        - subnet-***REMOVED***
-        - subnet-***REMOVED***
+        - subnet-a0a000a0
+        - subnet-b0bb0bb0
 
 plugins:
   - serverless-python-requirements
