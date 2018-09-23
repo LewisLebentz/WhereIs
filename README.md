@@ -40,6 +40,7 @@ Setup
 
        sls deploy
 
+   <img src="https://raw.githubusercontent.com/LewisLebentz/lewislebentz.github.io/master/images/Screenshot%202018-09-23%20at%2022.51.59.png" width="700">
 
 ### Slack Setup ###
 
