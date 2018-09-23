@@ -32,6 +32,8 @@ Setup
 
 4. Update serverless.yml changing the region, securityGroupIds and subnetIds where applicable.
 
+5. Update handler.py changing the url variable with your Cisco Prime IP/address.
+
 5. Run the command to deploy.
 
        sls deploy
