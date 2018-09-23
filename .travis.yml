@@ -1,4 +1,6 @@
 language: python
+python:
+  - "3.6.4"
 install: "npm install serverless -g"
 script:
   - npm install --save
