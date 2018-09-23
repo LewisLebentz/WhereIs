@@ -8,4 +8,5 @@
 [![Build Status](https://travis-ci.com/LewisLebentz/WhereIs.svg?token=Usao5Q8RYnzQveEaz7e6&branch=master)](https://travis-ci.com/LewisLebentz/WhereIs)
 
 ---
-**Slack slash command using Cisco Prime API to find people
+
+**Slack slash command using Cisco Prime API to find people**
