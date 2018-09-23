@@ -2,5 +2,6 @@ language: python
 install: "npm install serverless -g"
 script:
   - npm install --save
+  - pip install pipenv
   - sls requirements install
   - sls package
