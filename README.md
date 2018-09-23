@@ -17,21 +17,21 @@ Setup
 
 1. Clone the WhereIs repository and enter the directory.
 
-    git clone https://github.com/LewisLebentz/WhereIs.git && cd WhereIs
+       git clone https://github.com/LewisLebentz/WhereIs.git && cd WhereIs
 
 2. If you haven't already, install the Serverless Framework.
 
-    npm install serverless -g
+       npm install serverless -g
  * You will need AWS credentials setup on your machine before being able to run Serverless commands. Follow the guide [here](https://serverless.com/framework/docs/providers/aws/guide/credentials).
 
 3. Install the dependencies.
 
-    npm install --save
+       npm install --save
 
-	pip install pipenv
+       pip install pipenv
 
 4. Update serverless.yml changing the region, securityGroupIds and subnetIds where applicable.
 
 5. Run the command to deploy.
 
-    sls deploy
+       sls deploy
